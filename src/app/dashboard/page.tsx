@@ -11,16 +11,47 @@ const Dashboard = () => {
                 Welcome back! Here you can manage your tasks, view analytics, and make adjustments.
             </p>
             </div>
-            <div>
-                <Link href='/tasks'>
-                <div>
-                    <h2>Tasks</h2>
-                    <span>📋</span>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <Link className='bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105' href='dashboard/tasks'>
+                <div className='flex items-center justify-between'>
+                    <h2 className='text-xl font-semibold text=blue-800'>Tasks</h2>
+                    <span className='text-blue-500 text-2xl'>📋</span>
                 </div>
-                <p>
+                <p className='text-gray-700 mt-2'>
                     View, organize, and manage your daily tasks.
                 </p>
                 </Link>
+
+                 <Link className='bg-green-100 hover:bg-green-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105' href='dashboard/analytics'>
+                <div className='flex items-center justify-between'>
+                    <h2 className='text-xl font-semibold text=blue-800'>Analytics</h2>
+                    <span className='text-blue-500 text-2xl'>📊</span>
+                </div>
+                <p className='text-gray-700 mt-2'>
+                   Gain insight into your performance and trends.
+                </p>
+                </Link>
+                
+                <Link className='bg-purple-100 hover:bg-purple-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105' href='dashboard/settings'>
+                <div className='flex items-center justify-between'>
+                    <h2 className='text-xl font-semibold text=blue-800'>Settings</h2>
+                    <span className='text-blue-500 text-2xl'>⚙️</span>
+                </div>
+                <p className='text-gray-700 mt-2'>
+                   Customize and tweak your dashboard settings.
+                </p>
+                </Link>
+
+                <Link className='bg-yellow-100 hover:bg-yellow-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105' href='dashboard/settings'>
+                <div className='flex items-center justify-between'>
+                    <h2 className='text-xl font-semibold text=blue-800'>Users</h2>
+                    <span className='text-blue-500 text-2xl'>👨‍💼</span>
+                </div>
+                <p className='text-gray-700 mt-2'>
+                   View and manage your user base.
+                </p>
+                </Link>
+
             </div>
         </div>
     </div>
