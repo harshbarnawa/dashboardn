@@ -1,22 +1,39 @@
-import React from 'react'
-import Dashboard from './dashboard/page';
-import Analytics from './dashboard/analytics/page';
-import Link from 'next/link';
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to indigo-100 flex flex-col items-center justify-center p-6" >
-      <div className='text-center'>
-          <h1 className='text-5xl font-bold text-gray-800 mb-6'>Welcome to Closseta Family</h1>
+    <div className="min-h-screen bg-[#f1f5f9] flex items-center justify-center p-6">
+      
+      <div className="w-full max-w-5xl bg-white rounded-3xl shadow-lg p-10">
+        
+        {/* Heading */}
+        <div>
+          <p className="text-sm text-gray-500 mb-3">
+            system initialized
+          </p>
 
-          <p className='text-lg text-gray-600 mb-8'>Manage your tasks, track analytics, and stay organized with our powerful dashboard.</p>
+          <h1 className="text-5xl font-bold text-gray-900">
+            Welcome Hunter
+          </h1>
 
+          <p className="text-gray-600 mt-5 max-w-2xl text-lg leading-relaxed">
+            Complete your daily tasks, gain experience,
+            and level up step by step.
+          </p>
+        </div>
 
-          <Link className='inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl' href='/dashboard'>Go To Dashboard</Link>
-
+        <div className="mt-10">
+          
+          <Link
+            href="/dashboard"
+            className="inline-flex items-center justify-center bg-black text-white px-8 py-3 rounded-xl font-semibold hover:opacity-90 transition-all"
+          >
+            Arise
+          </Link>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
